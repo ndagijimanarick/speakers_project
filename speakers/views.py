@@ -12,9 +12,8 @@ def speak(request):
                 return redirect("/show")
             except:
                 pass
-        else:
-            form = SpeakerForm()
-        return render(request,'index.html',{'form':form})
+    else:
+        form = SpeakerForm()
     return render(request,'index.html',{'form':form})
 
 def show(request):

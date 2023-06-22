@@ -1,0 +1,8 @@
+mysql-connector-python==8.0.33
+platformdirs==3.5.1
+protobuf==3.20.3
+sqlparse==0.4.4
+typing_extensions==4.6.3
+tzdata==2023.3
+virtualenv==20.23.0
+virtualenvwrapper-win==1.2.7
