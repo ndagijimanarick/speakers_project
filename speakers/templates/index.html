@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="/speak">
+        {%csrf_token%}
+<div>
+    <br>
+    <p>
+        <h2>Enter Speaker Details</h2>
+    </p>
+<div>
+    <div>
+        <p>Speaker Id</p>{{form.sid}}
+    </div>
+    <div>
+        <p>First Name:</p>{{form.fname}}
+    </div>
+    <div>
+        <p>Last Name:</p>{{form.lname}}
+    </div>
+    <div>
+        <p>Topic:</p>{{form.topic}}
+    </div>
+</div><br>
+  <button type="submit">Submit</button>
+</form>
+</body>
+</html>
