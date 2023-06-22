@@ -1,21 +1,23 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'css/style.css' %}">
+    <title>Speakers Details</title>
 </head>
 <body>
-    <form method="POST" action="/speak">
+    <form method="POST" action="/speak" class="form1">
         {%csrf_token%}
 <div>
     <br>
     <p>
-        <h2>Enter Speaker Details</h2>
+        <h2><u>Enter Speaker Details</u></h2>
     </p>
 <div>
     <div>
-        <p>Speaker Id</p>{{form.sid}}
+        <p>Speaker Id:</p>{{form.sid}}
     </div>
     <div>
         <p>First Name:</p>{{form.fname}}
@@ -27,7 +29,7 @@
         <p>Topic:</p>{{form.topic}}
     </div>
 </div><br>
-  <button type="submit">Submit</button>
+  <button type="submit" class="submit">Submit</button>
 </form>
 </body>
 </html>

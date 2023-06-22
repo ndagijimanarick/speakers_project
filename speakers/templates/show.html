@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css'%}">
 </head>
 <body>
+<div class="tab">
     <table>
         <thead>
             <tr>
@@ -15,6 +16,7 @@
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Topic</th>
+                <th colspan="2">OPTION</th>
             </tr>
         </thead>
 
@@ -25,15 +27,15 @@
                 <td>{{speaker.fname}}</td>
                 <td>{{speaker.lname}}</td>
                 <td>{{speaker.topic}}</td>
-                <td>
-                    <a href="/edit/{{speaker.id}}">Edit</a>
-                    <a href="/delete/{{speaker.id}}">Delete</a>
+                <td><a href="/edit/{{speaker.id}}" class="submit">Edit</a></td>
+                <td><a href="/delete/{{speaker.id}}" class="delete">Delete</a></td>
                 </td>
             </tr>
                 {%endfor%}
         </tbody>
     </table>
     <br><br>
-    <button><a style="color: green;" href="/speak">Create New Speaker</a></button>
+    <button class="submit"><a href="/speak">Create New Speaker</a></button>
+</div>
 </body>
 </html>

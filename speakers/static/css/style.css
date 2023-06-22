@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+    font-size: 20px;
+}
+.submit,.submit>a{
+    background-color: green;
+    color: black;
+    text-decoration: none;
+    font: inherit;
+}
+.delete{
+    background-color: orangered;
+    color: black;
+    text-decoration: none;
+}
+.form1{
+    margin: 50px auto;
+    border: 1px solid green;
+    padding: 10px;
+    width: 300px;
+    background-color: rgb(169, 172, 172);
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th,td{
+    border: 1px solid black;
+}
+.tab{
+    margin: 50px auto;
+    border: 1px solid green;
+    padding: 10px;
+    width: 800px;
+    background-color: rgb(238, 243, 246);
+}
